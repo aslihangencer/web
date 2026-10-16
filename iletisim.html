@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeşil Fırın</title>
+</head>
+<body style="font-family: sans-serif; color: #008000; padding: 20px; justify-content: center; display: flex; flex-direction: column; align-items: center;">
+    <h3> 🍰 Yeşil Fırın & Pasta</h3>
+    <div class="action-item">
+                <span class="action-icon">🏠</span>
+                <a href="index.html" class="action-link">Ana Sayfa</a>
+            </div>
+
+            <div class="action-item">
+                <span class="action-icon">ℹ️</span>
+                <a href="hakkimizda.html" class="action-link">Hakkımızda</a>
+
+            </div>
+
+            <div class="action-item">
+                <span class="action-icon">📞</span>
+                <a href="iletisim.html" class="action-link">İletişim</a>
+                </a>
+
+            </div>
+    <p style ="background-color:#90EE90;">Taze ve doğal ürünlerle her gün yeni lezzetler</p>
+    <body style="font-family: Arial; background-color: #f0f0f0; padding: 20px;">
+<fieldset>
+    <form action="#" method="post"
+    style="width: 350px; margin: auto; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <legend style="text-align: center; color: #333;">Sipariş İstek Şikayet Formu</legend>
+        
+        <label for="name" style="display: block; margin-bottom: 5px; color: #555;">Adınız:</label>
+        <input type="text" id="name" name="name" required
+               style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <label for="email" style="display: block; margin-bottom: 5px; color: #555;">Email:</label>
+        <input type="email" id="email" name="email" required
+               style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+
+        <label for="Telefon" style="display: block; margin-bottom: 5px; color: #555;">Telefon:</label>
+        <input type="tel" id="Telefon" name="Telefon" required
+               style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+        <label for="personel" style="display: block; margin-bottom: 5px; color: #555;">İletişim kurmak istediğiniz personeli seçin:</label>
+        <select id="personel" name="personel" 
+                style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+            <option value="">Personel seçiniz</option>
+            <option value="personel1">Ahmet Yılmaz</option>
+            <option value="personel2">Ayşe Demir</option>
+            <option value="personel3">Bilge Yaz</option>
+</select>
+         <label for="ürün" style="display: block; margin-bottom: 5px; color: #555;">Ürün Sayısını Giriniz:</label>
+         <input type="number" id="ürün" name="ürün" min=1 max=10 required
+                style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+            </input>
+         
+        <label>Konu:</label><br>
+        <input type="radio" id="istek" name="istek" value="istek">
+        <label for="istek">İstek</label> 
+        
+        <input type="radio" id="sikayet" name="sikayet" value="sikayet">
+        <label for="sikayet">Şikayet</label><br>
+
+        <label>Dönüş Türü: </label>
+        <input type="checkbox" id="arama" name="arama" value="arama">
+        <label for="arama">Arama</label>
+
+        <input type="checkbox" id="sms" name="sms" value="sms">
+        <label for="sms">SMS</label>
+
+        <input type="checkbox" id="mail" name="mail" value="mail">
+        <label for="mail">E-Mail</label
+        style="width: 100%; padding: 8px; margin: 8px 0; box-sizing: border-box;"><br>
+
+        <label for="tarih">Tarih:</label><br>
+        <input type="date" id="tarih" name="tarih"
+        style="width: 100%; padding: 8px; margin: 8px 0; box-sizing: border-box;"><br>
+
+        <label for="message" style="display: block; margin-bottom: 5px; color: #555;">Açıklama Giriniz:</label>
+        <textarea id="message" name="message" rows="4"
+                  style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+        
+         <label for="dosya" style="display: block; margin-bottom: 5px; color: #555;">Dosya Seçiniz:</label>
+         <input type="file" name="dosya" value="dosya"><br>       
+       
+        <button type="submit"
+                style="width: 100%; padding: 10px; margin-top: 8px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Gönder
+        </button>
+
+        <button type="reset"
+              style="width: 100%; padding: 10px; margin-top: 8px; background-color: #ddd; border: none; border-radius: 5px; cursor: pointer;">
+              Formu Temizle
+            </button>
+    </fieldset>
+
+    <footer class="Yeşil fırın & Pasta">
+
+        <div class="İletişim Bilgileri">
+            <span class="label">Adres</span>
+            <span class="bar-price">Adres. Gürselpaşa, Abidin Dino Blv, 01200 Seyhan/Adana ; Mail:yesilfirin@example.com ; Telefon Numarası ;</span>
+        </div>
+      <div class="footer-links"></div>
+      <a href="#">0322 235 70 70</a>
+
+      
+      <small>© 2026 YeşilFırın & Pasta</small>
+
+
+    </footer>
+
+
+
+</body>
+</html>
