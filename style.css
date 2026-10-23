@@ -1,120 +1,177 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7f5;
+    font-family: sans-serif;
+    color: #008000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Üst Navigasyon / Eylem Alanı */
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+}
+
+.action-link {
+    text-decoration: none;
+    color: #008000;
+    font-weight: 600;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+
+/* Duyuru Paragrafı */
+body > p {
+    background-color: #90EE90;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 15px 0;
     color: #333;
 }
 
-h1 {
-    background-color: #164b3b;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin: 0;
-}
-
-nav {
-    background-color: black;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-}
-
-.banner {
-    background-color: lightyellow;
-    text-align: center;
-    padding: 5px;
-    margin: 20px;
-}
-
-.urunler {
+/* Ürün Bölümü */
+section.Öne Çıkan Ürünlerimiz {
+    width: 100%;
+    max-width: 500px;
     display: flex;
-    flex-wrap: wrap; /* yanyana sığmayan ürünler alt satıra geçer */
-    gap: 20px; /* ürünler arası boşluk oluşturdum */
-}
-
-.urun {
-    display: inline-block;
-    width: 220px;
-    padding: 10px;
-    margin: 10px;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.sepet-btn:hover {
-    background-color: #164b3b;
-}
-
-.sepet-btn {
-    display: block;
-    padding: 7px;
-    margin: 5px;
-    background-color: lightyellow;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
 
-#header {
-    background-color: rgb(133, 185, 30);
+section.Öne Çıkan Ürünlerimiz h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2f3542;
+    margin-top: 15px;
 }
 
-#header1 {
+.product-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+section.Öne Çıkan Ürünlerimiz > p {
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.label, .bar-price {
+    color: black;
+    font-weight: bold;
+}
+
+.add-to-cart-btn {
+    padding: 8px 16px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #006400;
+}
+
+/* Personel İletişim Bilgisi Bölümü */
+section.Personel İletişim Bilgisi {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.tablo-header {
-    background-color: rgb(44, 195, 44);
-    padding: 10px;
-}
-
-tr:hover {
-    background-color: rgb(109, 219, 36);
+section.Personel İletişim Bilgisi p {
+    color: black;
+    margin-bottom: 15px;
 }
 
 table {
+    width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2f3542;
 }
 
 th, td {
-    border: 2px solid black;
-    padding: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #333;
 }
 
-.sikayet-form {
-    padding: 25px;
+th {
+    background-color: #f2f2f2;
 }
 
-.header-form {
+/* Footer / Alt Alan */
+footer {
     text-align: center;
-    color: rgb(12, 66, 12);
-    margin-bottom: 25px;
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-fieldset {
-    width: 450px;
-    margin: 30px auto;
-    border-radius: 15px;
-    background-color: #e1e8e9;
-}
-
-.sikayet-form input[type="submit"], .sikayet-form input[type="reset"] {
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 15px;
     font-size: 14px;
-    background-color: #dae8ea;
+    color: #555;
 }
+
+footer .İletişim Bilgileri {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+        }
